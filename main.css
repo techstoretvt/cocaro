@@ -1,0 +1,194 @@
+body {
+    background-image: linear-gradient(90deg,rgb(23, 166, 137),rgb(134, 19, 200));
+    user-select: none;
+}
+
+.app {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+    /* resize: both; */
+    overflow: hidden;
+    box-shadow: 6px 4px 12px 4px #000;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    z-index: 1;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+.item {
+    position: relative;
+    width: 33.3333%;
+    height: 33.3333%;
+    background-color: aliceblue;
+    box-sizing: border-box;
+    border: 1px solid #000;
+}
+.chuo::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    box-sizing: border-box;
+    border: 8px solid red;
+    border-radius: 60%;
+}
+
+.chux::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    background-color: red;
+    transform: translateX(-50%) translateY(-50%) rotate(54deg);
+}
+.chux::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    background-color: red;
+    transform: translateX(-50%) translateY(-50%) rotate(-54deg);
+}
+/* gach */
+.gach1 {
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-image: linear-gradient(90deg,red,blue,yellow);
+    bottom: calc(33.3333% + 50%);
+    transform: translateY(50%);
+    left: 0;
+}
+.gach2 {
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-image: linear-gradient(90deg,red,blue,yellow);
+    top: calc(33.3333% + ( 33.3333% / 2));
+    transform: translateY(-50%);
+    left: 0;
+}
+.gach3 {
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-image: linear-gradient(90deg,red,blue,yellow);
+    top: calc(33.3333% + 50%);
+    transform: translateY(-50%);
+    left: 0;
+}
+
+
+
+
+.gach4 {
+    position: absolute;
+    height: 100%;
+    width: 10px;
+    background-image: linear-gradient(0deg,red,blue,yellow);
+    top: 0;
+    left: calc(33.3333% / 2);
+    transform: translateX(-50%);
+}
+.gach5 {
+    position: absolute;
+    height: 100%;
+    width: 10px;
+    background-image: linear-gradient(0deg,red,blue,yellow);
+    top: 0;
+    left: calc(66.6666% - (33.3333% / 2));
+    transform: translateX(-50%);
+}
+.gach6 {
+    position: absolute;
+    height: 100%;
+    width: 10px;
+    background-image: linear-gradient(0deg,red,blue,yellow);
+    top: 0;
+    left: calc(66.6666% + (33.3333% / 2));
+    transform: translateX(-50%);
+}
+
+
+
+.gach7 {
+    position: absolute;
+    width: 160%;
+    height: 6px;
+    background-image: linear-gradient(90deg,red,blue,yellow);
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+.gach8 {
+    position: absolute;
+    width: 160%;
+    height: 10px;
+    background-image: linear-gradient(90deg,red,blue,yellow);
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+
+.unShow {
+    display: none !important;
+}
+
+/* size */
+.size {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: flex;
+}
+.size-wrap-btn {
+    display: flex;
+    margin-left: 10px;
+}
+.size-wrap-btn input {
+    width: 30px;
+    text-align: center;
+    outline: none;
+}
+
+/* chơi lại */
+.replay {
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 14px;
+    background-color: darkorange;
+    color: #fff;
+    user-select: none;
+    border-radius: 4px;
+}
+.replay:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* heading */
+.app-heading {
+    position: fixed;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2);
+}
